@@ -1,0 +1,14 @@
+Test starts
+Test ends successfully
+b is necessarily 1 modulo 5
+Logarithmic lower bound = 1.60943791243410037460075933323
+b is necessarily 1 modulo 7
+Logarithmic lower bound = 3.55534806148941367970611207667
+b is necessarily 1 modulo 17
+Logarithmic lower bound = 6.38856140554562975995564669454
+b is necessarily 1 modulo 29
+Logarithmic lower bound = 9.75585723553210378713891872690
+b is necessarily 1 modulo 53
+Logarithmic lower bound = 13.7261491490842256212833878659
+
+Total time: 14.669 seconds, Total memory usage: 32.09MB
