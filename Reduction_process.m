@@ -3,10 +3,7 @@ SetLogFile("ReductionProcess.out");
 Our choice for the prime p_min for which we assume p >= p_min
 */
 function pMin(D)
-	if D eq 2 then 
-		return 23; 
-	end if;
-	return 47;
+	return 23;
 end function;
 
 /*
@@ -45,15 +42,10 @@ A lower bound for a_{2, min}. The values are based on the inequalities
 a_{2, min} >= 2 Log \overline{\pi} >= Log(b).
 */
 function a2min(D)
-	if D eq 2 then
-		return 234;
+	if D in {2, 3, 5} then
+		return 400;
 	end if;
-	if D eq 3 then
-		return 16.2;
-	end if;
-	if D eq 5 then
-		return 15;
-	end if;
+	error "Not computed yet";
 end function;
 
 /*
@@ -61,7 +53,7 @@ Our choice for the parameter \rho, as a function of D
 */
 function ChoiceOfRho(D)
 	if D eq 2 then
-		return 25;
+		return 35;
 	end if;
 
 	if D eq 3 then
@@ -194,13 +186,13 @@ procedure TableReductionProcess(D)
 	*/
 	PrintingReals := RealField(4);
 
-	pBound := 10^6;
+	pBound := 10^5;
 	BestEstimate := pBound;
 	"D =", D;
 	for n in [0..4] do
 		OldBestEstimate := BestEstimate;
 		Ktilde0, BestEstimate := FindNextApproximation(BestEstimate);
-		print n, OldBestEstimate, PrintingReals!Ktilde0, PrintingReals!f(Ktilde0), PrintingReals!g(Ktilde0, OldBestEstimate), BestEstimate;
+		print n, "&", OldBestEstimate, "&", PrintingReals!Ktilde0, "&", PrintingReals!f(Ktilde0), "&", PrintingReals!g(Ktilde0, OldBestEstimate), "&", BestEstimate, "\\\\";
 	end for;
 end procedure;
 

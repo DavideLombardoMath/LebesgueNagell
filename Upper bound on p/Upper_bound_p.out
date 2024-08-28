@@ -1,6 +1,6 @@
 Testing: for D = 2 an upper bound is p <= 24000
 true
-Testing: for D = 3 an upper bound is p <= 36000
+Testing: for D = 3 an upper bound is p <= 85000
 true
 Testing: for D = 5 an upper bound is p <= 31000
 true

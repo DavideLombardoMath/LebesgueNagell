@@ -46,7 +46,7 @@ function TestUpperBoundP(D, p)
 end function;
 
 TestUpperBoundP(2, 24000);
-TestUpperBoundP(3, 36000);
+TestUpperBoundP(3, 85000);
 TestUpperBoundP(5, 31000);
 
 exit;
