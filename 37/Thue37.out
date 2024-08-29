@@ -1,0 +1,50 @@
+                  GP/PARI CALCULATOR Version 2.11.2 (released)
+          amd64 running linux (x86-64/GMP-6.1.2 kernel) 64-bit version
+        compiled: Jul 12 2019, gcc version 9.1.0 (Ubuntu 9.1.0-8ubuntu1)
+                           threading engine: pthread
+                 (readline v8.0 enabled, extended help enabled)
+
+                     Copyright (C) 2000-2018 The PARI Group
+
+PARI/GP is free software, covered by the GNU General Public License, and comes 
+WITHOUT ANY WARRANTY WHATSOEVER.
+
+Type ? for help, \q to quit.
+Type ?17 for how to get moral (and possibly technical) support.
+
+parisize = 8000000, primelimit = 500000, nbthreads = 20
+Testing the triple D = 37 , p = 3 and r = 0 
+[]
+Testing the triple D = 37 , p = 3 and r = 1 
+[[1, 0], [3, -1], [18, -7]]
+Testing the triple D = 37 , p = 5 and r = 1 
+[[1, 0]]
+Testing the triple D = 37 , p = 5 and r = 2 
+[[-9, 2]]
+Testing the triple D = 37 , p = 7 and r = 0 
+[]
+Testing the triple D = 37 , p = 7 and r = 1 
+[[1, 0]]
+Testing the triple D = 37 , p = 7 and r = 2 
+[]
+Testing the triple D = 37 , p = 11 and r = 0 
+[]
+Testing the triple D = 37 , p = 11 and r = 1 
+[[1, 0]]
+Testing the triple D = 37 , p = 11 and r = 2 
+[]
+Testing the triple D = 37 , p = 13 and r = 1 
+[[1, 0]]
+Testing the triple D = 37 , p = 13 and r = 4 
+[]
+Testing the triple D = 37 , p = 17 and r = 0 
+[]
+Testing the triple D = 37 , p = 17 and r = 1 
+[[1, 0]]
+Testing the triple D = 37 , p = 17 and r = 2 
+[]
+Testing the triple D = 37 , p = 17 and r = 5 
+[]
+Testing the triple D = 37 , p = 17 and r = 8 
+[]
+Goodbye!

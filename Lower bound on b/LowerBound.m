@@ -97,19 +97,24 @@ function TestbViaContinuedFractions(r, p, D)
 				Append(~solutions, b);
 			end if;
 		end if;
+		b := (u^2-D*v^2);
+		if FastIsSquare(b, p, D) then
+			Append(~solutions, b);
+		end if;
 	end for;
 	return 2 * Log(u) - Log(4*UpperBoundy), solutions;
 
 end function;
 
 function TestD(D)
+	Solutions := {};
+	GlobalLowerBound := 1000;
+
 	for p in PrimesUpTo(10^5) do
-		Solutions := {};
-		GlobalLowerBound := 1000;
-		if p ge 3 then
+		if p ge 5 then
 			LowerBound, SolutionsFound := TestbViaContinuedFractions(rD(D), p, D);
 			GlobalLowerBound := Min(GlobalLowerBound, LowerBound);
-			Solutions := Solutions join { x: x in SolutionsFound};
+			Solutions := Solutions join { x: x in SolutionsFound | Abs(x) ne 1 };
 		end if;
 	end for;
 	return Solutions, GlobalLowerBound;

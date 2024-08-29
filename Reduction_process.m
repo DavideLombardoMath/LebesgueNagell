@@ -3,7 +3,7 @@ SetLogFile("ReductionProcess.out");
 Our choice for the prime p_min for which we assume p >= p_min
 */
 function pMin(D)
-	return 23;
+	return 19;
 end function;
 
 /*
@@ -90,8 +90,8 @@ procedure TableReductionProcess(D)
 	sigma := (1 + 2*mu - mu^2) / 2;
 	rho := ChoiceOfRho(D);
 
-	R1 := 2;
-	S1 := 3;
+	R1 := 3;
+	S1 := 2;
 	L := R1*S1;
 
 	h := 2^10;
